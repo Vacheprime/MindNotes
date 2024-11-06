@@ -1,0 +1,48 @@
+/* Import the reset stylesheet */
+@import url("reset.css");
+/* Import the google font "Hubballi" */
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Zen+Loop:ital@0;1&display=swap');
+
+/* Set the font globally */
+html {
+    font-family: "Hubballi";
+}
+
+/* Make the buttons inherit the font family */
+button {
+    font-family: inherit;
+}
+
+/* Style the header as a css grid */
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(181, 193, 142);
+}
+
+/* Styling for the main title */
+header > h1 {
+    justify-self: center;
+}
+
+/* Styling for the Statistics button */
+#StatisticsButton {
+    justify-self: right;
+}
+
+/* Styling for the About button */
+#AboutButton {
+    justify-self: left;
+}
+
+/* Style the main section as a vertical flexbox */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Make the button occupy only content width */
+main > button {
+    width: fit-content;
+}
