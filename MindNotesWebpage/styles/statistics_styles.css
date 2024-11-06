@@ -1,0 +1,111 @@
+/* Import the reset stylesheet */
+@import url("reset.css");
+/* Import the google font "Hubballi" */
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Zen+Loop:ital@0;1&display=swap');
+
+/* Set the font globally */
+html, body {
+    font-family: "Hubballi";
+    width: 100%;
+    height: 100%;
+}
+
+/* Style the header as a css grid */
+header {
+    height: 10%;
+    min-height: 40px;
+    min-width: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(181, 193, 142);
+}
+
+/* Styling for the main title */
+header > a {
+    justify-self: center;
+    text-align: center;
+    font-size: clamp(1.5rem, calc(1.5rem + ((1vw - 0.48rem) * 0.6944)), 2rem);
+    text-decoration: none;
+    color: black;
+}
+
+/* Constant styling for the main section of the page */
+main {
+    display: grid;
+    grid-template-rows: minmax(15%, 1fr) minmax(85%, 5fr); /* Using minmax and percentages to allow cell content to overflow */
+    background-color: rgb(247, 220, 185);
+    height: 90%;
+    width: 100%;
+    min-height: 500px;
+    min-width: 370px;
+}
+
+/* Styling for the Statistics page title */
+main > h1 {
+    align-self: center;
+    text-align: center;
+    font-size: clamp(1.5rem, calc(1.5rem + ((1vw - 0.48rem) * 2.0833)), 3rem);
+}
+
+/* Style the StatisticsLayoutContainer as a horizontal flexbox */
+#StatisticsLayoutContainer {
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+/* For large screens, make the canvas appear side to side with the statistics */
+@media (min-width: 1024px) {
+    /* Style the statistics container as a horizontal grid */
+    #StatisticsLayoutContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* For small screens, make the canvas appear under the statistics */
+@media (max-width: 1024px) {
+    /* Style the statistics container as a vertical grid */
+    #StatisticsLayoutContainer {
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+/* Style the satistics label as a vertical flexbox */
+#StatisticsLabelContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-height: 100%;
+}
+
+/* Styling for the div labels */
+#StatisticsLabelContainer > div {
+    background-color: rgb(179, 163, 152);
+    color: white;
+    font-size: clamp(1rem, calc(1rem + ((1vw - 0.48rem) * 1.3889)), 2rem);
+    padding: 3% 5%;
+    border-radius: 15px;
+    align-self: center;
+    width: 50%;
+}
+
+/* Styling for the statistic's name */
+#StatisticsLabelContainer > div > h2 {
+    float: left;
+}
+
+/* Styling for the statistic's value */
+#StatisticsLabelContainer > div > span {
+    float: right;
+}
+
+/* Styling for the linked notes canvas */
+#LinkedNotesCanvas {
+    box-sizing: border-box;
+    align-self: center;
+    justify-self: center;
+    width: 75%;
+    height: 75%;
+    border: 2px solid black;
+}
