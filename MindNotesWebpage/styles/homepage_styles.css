@@ -22,6 +22,7 @@ button {
 /* Styling for when a button is being clicked */
 button:active {
     background-color: rgb(163, 131, 99);
+    outline: 2px solid black;
 }
 
 /* Styling for when a button is being hovered over by the mouse */
