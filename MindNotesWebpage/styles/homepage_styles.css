@@ -37,7 +37,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: rgb(181, 193, 142);
-    align-content: center;
+    align-items: center;
 }
 
 /* Styling for the main title */
