@@ -73,7 +73,7 @@ main {
 
 /* Styling for the description text */
 #DescriptionContainer > p {
-    font-size: clamp(0.75rem, calc(0.75rem + ((1vw - 0.48rem) * 1.3889)), 1.75rem);
+    font-size: clamp(1rem, calc(1rem + ((1vw - 0.48rem) * 1.0417)), 1.75rem);
 }
 
 /* Styling for the iframe. Change the width and height according to screen size */
