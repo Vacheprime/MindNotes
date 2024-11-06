@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/statistics_styles.css" rel="stylesheet">
+    <title>Your Statistics</title>
+</head>
+<body>
+    <!-- Header section (top navigation bar) -->
+    <header>
+        <a href="homepage.html"><h1>MindNotes</h1></a>
+    </header>
+    <main>
+        <h1>Your Statistics</h1>
+        <!-- Contains the statistics on the left, and the canvas with linked notes on the right -->
+        <div id="StatisticsLayoutContainer">
+            <!-- Contains a vertical list of statistics -->
+            <div id="StatisticsLabelContainer">
+                <!-- The content here might be dynamically generated in the future -->
+                <div>
+                    <h2>Total Note Pages</h2>
+                    <span id="TotalNotePagesSpan">XXXXXX</span>
+                </div>
+                <div>
+                    <h2>Total Links</h2>
+                    <span id="TotalLinksSpan">XXXXXX</span>
+                </div>
+                <div>
+                    <h2>Total Concepts</h2>
+                    <span id="TotalConceptsSpan">XXXXXX</span>
+                </div>
+                <div>
+                    <h2>Total Words</h2>
+                    <span id="TotalWordsSpan">XXXXXX</span>
+                </div>
+            </div>
+            <!-- The canvas responsible for displaying a network graph of the linked notes -->
+            <canvas id="LinkedNotesCanvas"></canvas>
+        </div>
+    </main>
+</body>
+</html>
