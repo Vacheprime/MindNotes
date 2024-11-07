@@ -18,16 +18,21 @@
         <div id="FormContainer">
             <form>
                 <!-- Name field -->
-                <label for="NameInput">Name</label>
-                <input type="text" id="NameInput" required maxlength="30">
+                <div class="InputContainer">
+                    <label for="NameInput">Name</label>
+                    <input type="text" id="NameInput" required maxlength="40">
+                </div>
 
                 <!-- Concept field -->
-                <label for="ConceptInput">Main Concept</label>
-                <input type="text" id="ConceptInput" required maxlength="20">
-
+                <div class="InputContainer">
+                    <label for="ConceptInput">Main Concept</label>
+                    <input type="text" id="ConceptInput" required maxlength="40">
+                </div>
                 <!-- Category field -->
-                <label for="CategoryInput">Category</label maxlength="20">
-                <input type="text" id="CategoryInput" required>
+                <div class="InputContainer">
+                    <label for="CategoryInput">Category</label>
+                    <input type="text" id="CategoryInput" required maxlength="40">
+                </div>
             </form>
             <!-- Create button -->
             <button>Create</button>
