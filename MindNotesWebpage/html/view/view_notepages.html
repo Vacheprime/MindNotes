@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../styles/view_styles/view_notepages_styles.css" rel="stylesheet">
+    <title>Your Notepages</title>
+</head>
+<body>
+    <!-- Header section (top navigation bar) -->
+    <header>
+        <button>Bookmarked Pages</button>
+        <a href="../homepage.html"><h1>MindNotes</h1></a>
+        <button>Linked Pages</button>
+    </header>
+
+    <!-- Main section of the View Notepages page -->
+    <main>
+        <h1>Your Notepages</h1>
+        <div id="SearchAndFilterContainer">
+            <select id="CategorySelect" name="Category">
+                <!-- Options will be dynamically generated. -->
+                <!-- Sample options -->
+                <option>Option 1</option>
+                <option>Option 2</option>
+            </select>
+            <input type="text" id="SearchInput" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <div id="ViewNotepagesContainer">
+            <!-- The individual notepage containers will be dynamically generated. -->
+        </div>
+    </main>
+</body>
+</html>
