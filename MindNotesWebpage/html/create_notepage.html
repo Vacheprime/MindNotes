@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/create_notepage_styles.css" rel="stylesheet">
+    <title>Create New Notepage</title>
+</head>
+<body>
+    <!-- Header section (top navigation bar) -->
+    <header>
+        <a href="homepage.html"><h1>MindNotes</h1></a>
+    </header>
+
+    <!-- Main section of the Create Notepage page -->
+    <main>
+        <h1>Create New Notepage</h1>
+        <div id="FormContainer">
+            <form>
+                <!-- Name field -->
+                <label for="NameInput">Name</label>
+                <input type="text" id="NameInput" required maxlength="30">
+
+                <!-- Concept field -->
+                <label for="ConceptInput">Main Concept</label>
+                <input type="text" id="ConceptInput" required maxlength="20">
+
+                <!-- Category field -->
+                <label for="CategoryInput">Category</label maxlength="20">
+                <input type="text" id="CategoryInput" required>
+            </form>
+            <!-- Create button -->
+            <button>Create</button>
+        </div>
+    </main>
+</body>
+</html>
