@@ -1,0 +1,145 @@
+/* Import the reset stylesheet */
+@import url("reset.css");
+/* Import the google font "Hubballi" */
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Zen+Loop:ital@0;1&display=swap');
+
+/* Set the font globally */
+html, body {
+    box-sizing: border-box;
+    font-family: "Hubballi";
+    width: 100%;
+    height: 100%;
+}
+
+/* Style the header as a css grid */
+header {
+    height: 10%;
+    min-height: 40px;
+    min-width: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(181, 193, 142);
+}
+
+/* Styling for the header title */
+header > a {
+    justify-self: center;
+    text-align: center;
+    font-size: clamp(1.5rem, calc(1.5rem + ((1vw - 0.48rem) * 0.6944)), 2rem);
+    text-decoration: none;
+    color: black;
+}
+
+/* Constant styling for the main section of the page */
+main {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(247, 220, 185);
+    height: 90%;
+    width: 100%;
+    min-height: 500px;
+    min-width: 370px;
+}
+
+/* Styling for the Create Notepage page title */
+main > h1 {
+    align-self: center;
+    text-align: center;
+    font-size: clamp(1.5rem, calc(1.5rem + ((1vw - 0.48rem) * 2.0833)), 3rem);
+}
+
+/* Styling for the Create Notepage form container  */
+#FormContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(179, 163, 152);
+    font-size: clamp(1.25rem, calc(1.25rem + ((1vw - 0.48rem) * 1.0417)), 2rem);
+    color: white;
+    border-radius: 15px;
+    justify-content: space-evenly;
+    width: 75%;
+    height: 90%;
+}
+
+/* Styling for the Create button */
+#FormContainer > button {
+    font-family: inherit;
+    align-self: center;
+    background-color: rgb(163, 131, 100);
+    font-size: clamp(1.25rem, calc(1.25rem + ((1vw - 0.48rem) * 1.0417)), 2rem);
+    color: white;
+    border: none;
+    width: fit-content;
+    padding: 2% 5%; 
+    margin-bottom: 2%;
+    border-radius: 10px;
+}
+
+/* Styling for when a button is being clicked */
+#FormContainer > button:active {
+    background-color: rgb(194, 156, 118);
+    outline: 2px solid black;
+}
+
+/* Styling for when a button is being hovered over by the mouse */
+#FormContainer > button:hover {
+    outline: 2px solid black;
+}
+
+/* Style the form as a vertical flexbox */
+form {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+/* Styling for the input containers */
+.InputContainer {
+    width: 75%;
+}
+
+/* Styling for the input labels */
+.InputContainer > label {
+    padding: 2% 0%; /* Align the center of the label with the center of the input fields */
+}
+
+/* Styling for the input fields */
+.InputContainer > input {
+    background-color: rgb(128, 116, 108);
+    border-radius: 15px;
+    color: white;
+    padding: 2% calc(4% + 5px); /* Make the left right padding 5px at a minimum as to not hide the cursor when the corners become too rounded */
+}
+
+/* For large screens, make input fields appear to the right of labels*/
+@media (min-width: 1024px) {
+    .InputContainer > label {
+        display: inline;
+        float: left;
+    }
+
+    .InputContainer > input {
+        display: inline;
+        float: right;
+    }
+}
+
+/* For small screens, make input fields appear under the labels */
+@media (max-width: 1024px) {
+    .InputContainer > label {
+        display: block;
+        float: none;
+    }
+
+    .InputContainer > input {
+        width: 75%; /* Make the width dynamic as to avoid the input overflowing the container */
+        display: block;
+        float: none;
+    }
+}
