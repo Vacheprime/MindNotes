@@ -73,7 +73,7 @@ main > h1 {
     color: white;
     border: none;
     width: fit-content;
-    padding: 2% 5%; 
+    padding: min(2%, 15px) 5%; 
     margin-bottom: 2%;
     border-radius: 10px;
 }
@@ -111,10 +111,11 @@ form {
 
 /* Styling for the input fields */
 .InputContainer > input {
+    box-sizing: border-box;
     background-color: rgb(128, 116, 108);
     border-radius: 15px;
     color: white;
-    padding: 2% calc(4% + 5px); /* Make the left right padding 5px at a minimum as to not hide the cursor when the corners become too rounded */
+    padding: min(2%, 30px) calc(4% + 5px); /* Make the left right padding 5px at a minimum as to not hide the cursor when the corners become too rounded */
 }
 
 /* For large screens, make input fields appear to the right of labels*/
