@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../styles/view_styles/view_linked_styles.css" rel="stylesheet">
+    <title>Your Linked Notes</title>
+</head>
+<body>
+    <!-- Header section (top navigation bar) -->
+    <header>
+        <a href="homepage.html"><h1>MindNotes</h1></a>
+    </header>
+    <main>
+        <h1>Your Linked Notes</h1>
+        <select id="CategorySelect" name="Category">
+            <!-- Options will be dynamically generated. -->
+            <!-- Sample options -->
+            <option>Category 1</option>
+            <option>Category 2</option>
+        </select>
+        <!-- Container for display the saved notepages -->
+        <div id="ViewNotepagesContainer">
+            <!-- The individual notepage containers will be dynamically generated. -->
+             <div class="NotepageContainer">
+                <h2>Notepage Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia elit ipsum, non tempor tortor facilisis a.</p>
+                <h3>Main Concept</h3>
+                <h3>Category</h3>
+             </div>
+             <p>&#8594</p>
+             <div class="NotepageContainer">
+                <h2>Notepage Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia elit ipsum, non tempor tortor facilisis a.</p>
+                <h3>Main Concept</h3>
+                <h3>Category</h3>
+             </div>
+             <p>&#8594</p>
+             <div class="NotepageContainer">
+                <h2>Notepage Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia elit ipsum, non tempor tortor facilisis a.</p>
+                <h3>Main Concept</h3>
+                <h3>Category</h3>
+             </div>
+             <p>&#8594</p>
+             <div class="NotepageContainer">
+                <h2>Notepage Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia elit ipsum, non tempor tortor facilisis a.</p>
+                <h3>Main Concept</h3>
+                <h3>Category</h3>
+             </div>
+             <p>&#8594</p>
+        </div>
+        <!-- Previous and next buttons for displaying all the saved notepages -->
+        <div id="PreviousNextContainer">
+            <button id="PreviousPagesButton">Previous</button>
+            <button id="NextPagesButton">Next</button>
+        </div>
+    </main>
+</body>
+</html>
