@@ -34,6 +34,8 @@ To create this website, here is a list of the implementation tasks that need to 
 
 -     Write the JavaScript code to dynamically generate the view note pages page using the DOM API. 
 
+-     Write the JavaScript code to fetch a daily inspirational quote and dynamically add it to the homepage. 
+
 ## Further Documentation
 
 To see the website's sitemap as well as wireframes, head over to the `docs` directory. The diagrams are in drawio format.
