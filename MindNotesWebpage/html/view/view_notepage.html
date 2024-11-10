@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet">
+    <link href="../../styles/view_styles/view_notepage_styles.css" rel="stylesheet">
+    <!-- Title to be dynamically loaded -->
+    <title>Notepage</title>
+</head>
+<body>
+    <!-- Header section (top navigation bar) -->
+    <header>
+        <button id="ShowControlsButton">Controls</button>
+        <a href="../homepage.html"><h1>MindNotes</h1></a>
+    </header>
+    <!-- Main section of the View Notepage -->
+     <main>
+        <div id="SidePanel">
+            <div class="LabelContainer">
+                <h2 id="NotepageNameLabel">Note Page Name</h2>
+            </div>
+            <div class="LabelContainer">
+                <h2 id="ConceptLabel">Main Concept</h2>
+            </div>
+            <div class="LabelContainer">
+                <h2 id="CategoryLabel">Category</h2>
+            </div>
+            <div class="LabelContainer">
+                <h2 id="TotalWordsLabel">Total Words: XXXXXX</h2>
+            </div>
+            <div id="SidePanelButtonContainer">
+                <button id="LinkPageButton">Link to Page</button>
+                <button id="BookmarkButton">Bookmark</button>
+            </div>
+        </div>
+
+        <div id="EditorContainer">
+            <div id="Editor">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia elit ipsum, non tempor tortor facilisis a.
+            </div>
+        </div>
+        
+     </main>
+     <!-- Create a sample editor to see how it would look on the webpage -->
+     <script>
+        const quill = new Quill('#Editor', {
+            theme: 'snow'
+        });
+      </script>
+</body>
+</html>
