@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0" version="24.8.4">
   <diagram name="Page-1" id="KEN85mO7qwgr07QJLTKT">
-    <mxGraphModel dx="3209" dy="1885" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2947" dy="1749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -27,6 +27,9 @@
         </mxCell>
         <mxCell id="sm8IrvPDAnrK8POAPXxG-7" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;MindNotes&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="sm8IrvPDAnrK8POAPXxG-1" vertex="1">
           <mxGeometry x="360" y="40" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="74onuPJw_JDSbtbP6_4a-1" value="Daily Inspirational Quote" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="sm8IrvPDAnrK8POAPXxG-1">
+          <mxGeometry x="318.75" y="510" width="182.5" height="30" as="geometry" />
         </mxCell>
         <mxCell id="sm8IrvPDAnrK8POAPXxG-8" value="ABOUT" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-830" y="20" width="820" height="590" as="geometry" />
@@ -640,7 +643,7 @@
         <mxCell id="sm8IrvPDAnrK8POAPXxG-295" value="Link to Page" style="rounded=0;whiteSpace=wrap;html=1;" parent="sm8IrvPDAnrK8POAPXxG-261" vertex="1">
           <mxGeometry x="22.5" y="340" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="sm8IrvPDAnrK8POAPXxG-296" value="View Linked Pages" style="rounded=0;whiteSpace=wrap;html=1;" parent="sm8IrvPDAnrK8POAPXxG-261" vertex="1">
+        <mxCell id="sm8IrvPDAnrK8POAPXxG-296" value="Bookmark Notepage" style="rounded=0;whiteSpace=wrap;html=1;" parent="sm8IrvPDAnrK8POAPXxG-261" vertex="1">
           <mxGeometry x="22.5" y="460" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TO8GNW6UhLJUpQfXm9mZ-1" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;endSize=9;" parent="1" source="sm8IrvPDAnrK8POAPXxG-6" target="sm8IrvPDAnrK8POAPXxG-23" edge="1">
@@ -672,12 +675,6 @@
               <mxPoint x="690" y="630" />
               <mxPoint x="1282" y="630" />
             </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="TO8GNW6UhLJUpQfXm9mZ-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;endSize=9;" parent="1" source="sm8IrvPDAnrK8POAPXxG-3" target="sm8IrvPDAnrK8POAPXxG-83" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="60" y="420" as="sourcePoint" />
-            <mxPoint x="110" y="370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TO8GNW6UhLJUpQfXm9mZ-5" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;endSize=9;" parent="1" source="sm8IrvPDAnrK8POAPXxG-14" target="sm8IrvPDAnrK8POAPXxG-1" edge="1">
@@ -849,10 +846,16 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="TO8GNW6UhLJUpQfXm9mZ-27" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;entryX=1;entryY=0.75;entryDx=0;entryDy=0;endSize=9;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="sm8IrvPDAnrK8POAPXxG-296" target="sm8IrvPDAnrK8POAPXxG-187" edge="1">
+        <mxCell id="74onuPJw_JDSbtbP6_4a-2" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;endSize=9;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="sm8IrvPDAnrK8POAPXxG-3" target="sm8IrvPDAnrK8POAPXxG-83">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="420" y="1820" as="sourcePoint" />
-            <mxPoint x="470" y="1770" as="targetPoint" />
+            <mxPoint x="416" y="480" as="sourcePoint" />
+            <mxPoint x="530" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="415" y="510" />
+              <mxPoint x="520" y="510" />
+              <mxPoint x="520" y="590" />
+              <mxPoint x="418" y="590" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
