@@ -83,3 +83,9 @@ main > button {
     font-size: clamp(1.5rem, calc(1.5rem + ((1vw - 0.48rem) * 2.0833)), 3rem);
     width: fit-content;
 }
+
+/* Styling for the quote text */
+#QuoteContainer > p {
+    text-align: center;
+    font-size: clamp(1.25rem, calc(1.25rem + ((1vw - 0.48rem) * 1.0417)), 2rem);
+}
