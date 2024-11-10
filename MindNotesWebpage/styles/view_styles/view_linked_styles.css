@@ -2,3 +2,187 @@
 @import url("../reset.css");
 /* Import the google font "Hubballi" */
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Zen+Loop:ital@0;1&display=swap');
+
+/* Set the font globally */
+html, body {
+    box-sizing: border-box;
+    font-family: "Hubballi";
+    width: 100%;
+    height: 100%;
+}
+
+/* Define global style rules for buttons */
+button {
+    font-family: inherit;
+    background-color: rgb(185, 148, 112);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Styling for when a button is being clicked */
+button:active {
+    background-color: rgb(163, 131, 99);
+    outline: 2px solid black;
+}
+
+/* Styling for when a button is being hovered over by the mouse */
+button:hover {
+    outline: 2px solid black;
+}
+
+/* Style the header as a css grid */
+header {
+    height: 10%;
+    min-height: 40px;
+    min-width: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(181, 193, 142);
+}
+
+/* Styling for the header title */
+header > a {
+    justify-self: center;
+    text-align: center;
+    font-size: clamp(1.5rem, calc(1.5rem + ((1vw - 0.48rem) * 0.6944)), 2rem);
+    text-decoration: none;
+    color: black;
+}
+
+/* Constant styling for the main section of the page */
+main {
+    display: grid;
+    grid-template-rows: 2fr 1fr 6fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(247, 220, 185);
+    height: 90%;
+    width: 100%;
+    min-height: 500px;
+    min-width: 370px;
+}
+
+/* Styling for the Create Notepage page title */
+main > h1 {
+    align-self: center;
+    text-align: center;
+    font-size: clamp(1.5rem, calc(1.5rem + ((1vw - 0.48rem) * 2.0833)), 3rem);
+}
+
+/* Styling for the category dropdown */
+#CategorySelect {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(185, 148, 112);
+    color: white;
+    font-size: clamp(1rem, calc(1rem + ((1vw - 0.48rem) * 1.3889)), 2rem);
+    padding: min(1%, 20px) calc(2% + 5px);
+}
+
+/* Styling for the select button when it is focused */
+#CategorySelect:focus {
+    outline: none;
+    border: none;
+}
+
+/* Constant styling for the view notepages container */
+#ViewNotepagesContainer {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    align-items: center;
+    gap: 10px;
+}
+
+/* For large screens, make input fields appear to the right of labels*/
+@media (min-width: 1024px) {
+    /* Make the container possess at most 2 rows and at most 8 items per row*/
+    #ViewNotepagesContainer {
+        grid-template-columns: minmax(20%, 0.8fr) auto minmax(20%, 0.8fr) auto minmax(20%, 0.8fr) auto minmax(20%, 0.8fr) auto;
+        grid-template-rows: repeat(2, min-content(0px));
+    }
+}
+
+/* For small screens, make input fields appear under the labels */
+@media (max-width: 1024px) {
+    #ViewNotepagesContainer {
+        grid-template-columns: minmax(40%, 1fr) auto minmax(40%, 1fr) auto;
+        grid-template-rows: auto auto;
+        grid-auto-rows: 0px;
+        overflow: hidden;
+        overflow-y: hidden;
+    }
+}
+
+/* Styling for the individual notepage containers */
+.NotepageContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(196, 179, 167);
+    border-radius: 15px;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Styling for the title of the notepage */
+.NotepageContainer > h2 {
+    font-size: clamp(1rem, calc(1rem + ((1vw - 0.48rem) * 1.0417)), 1.75rem);
+}
+
+/* Styling for the concept and category of the notepage */
+.NotepageContainer > h3 {
+    font-size: clamp(0.75rem, calc(0.75rem + ((1vw - 0.48rem) * 0.6944)), 1.25rem);
+}
+
+/* Styling for the short preview of the notepage */
+.NotepageContainer > p {
+    text-align: center;
+    margin: 0% 10px;
+    font-size: clamp(0.75rem, calc(0.75rem + ((1vw - 0.48rem) * 0.6944)), 1.25rem);
+}
+
+/* Add open quotation before the preview text*/
+.NotepageContainer > p::before {
+    content: "“";
+}
+
+/* Add closing quotation after the preview text */
+.NotepageContainer > p::after {
+    content: "”";
+}
+
+/* Styling for the arrow container */
+.ArrowContainer {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Styling for the right arrow */
+.RightArrow {
+    height: fit-content;
+    font-size: clamp(1.25rem, calc(1.25rem + ((1vw - 0.48rem) * 2.4306)), 3rem);
+}
+
+/* Styling for the container of the next and previous buttons */
+#PreviousNextContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+/* Styling for the next and previous buttons */
+#PreviousNextContainer > button {
+    padding: min(1%, 10px) calc(2% + 5px);
+    font-size: clamp(1rem, calc(1rem + ((1vw - 0.48rem) * 1.3889)), 2rem);
+}
