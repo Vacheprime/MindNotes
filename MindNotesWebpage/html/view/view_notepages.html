@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../styles/view_styles/view_notepages_styles.css" rel="stylesheet">
+	<script src="../../js/view_notepages.js"></script>
     <title>Your Notepages</title>
 </head>
-<body>
+<body onload="load()">
     <!-- Header section (top navigation bar) -->
     <header>
-        <button id="BookmarkedPagesButton">Bookmarked Pages</button>
+        <button id="BookmarkedPagesButton" onclick="window.location.href='view_bookmarked.html'">Bookmarked Pages</button>
         <a href="../homepage.html"><h1>MindNotes</h1></a>
         <button id="LinkedPagesButton" onclick="window.location.href='view_linked.html'">Linked Pages</button>
     </header>
@@ -20,53 +21,13 @@
         <!-- Container for the category dropdown, search input, and search button -->
         <div id="SearchAndFilterContainer">
             <select id="CategorySelect" name="Category">
-                <!-- Options will be dynamically generated. -->
-                <!-- Sample options -->
-                <option>Category 1</option>
-                <option>Category 2</option>
+                <option value="ALL">ALL</option>
             </select>
-            <input type="text" id="SearchInput" placeholder="Search...">
+            <input type="text" id="SearchInput" placeholder="Search..." required>
             <button id="SearchButton">Search</button>
         </div>
         <!-- Container for display the saved notepages -->
         <div id="ViewNotepagesContainer">
-            <!-- The individual notepage containers will be dynamically generated. -->
-             <div class="NotepageContainer">
-                <h2>Notepage Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia elit ipsum, non tempor tortor facilisis a.</p>
-                <h3>Main Concept</h3>
-                <h3>Category</h3>
-             </div>
-             <div class="NotepageContainer">
-                <h2>Notepage Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia elit ipsum, non tempor tortor facilisis a.</p>
-                <h3>Main Concept</h3>
-                <h3>Category</h3>
-             </div>
-             <div class="NotepageContainer">
-                <h2>Notepage Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia elit ipsum, non tempor tortor facilisis a.</p>
-                <h3>Main Concept</h3>
-                <h3>Category</h3>
-             </div>
-             <div class="NotepageContainer">
-                <h2>Notepage Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia elit ipsum, non tempor tortor facilisis a.</p>
-                <h3>Main Concept</h3>
-                <h3>Category</h3>
-             </div>
-             <div class="NotepageContainer">
-                <h2>Notepage Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia elit ipsum, non tempor tortor facilisis a.</p>
-                <h3>Main Concept</h3>
-                <h3>Category</h3>
-             </div>
-             <div class="NotepageContainer">
-                <h2>Notepage Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia elit ipsum, non tempor tortor facilisis a.</p>
-                <h3>Main Concept</h3>
-                <h3>Category</h3>
-             </div>
         </div>
         <!-- Previous and next buttons for displaying all the saved notepages -->
         <div id="PreviousNextContainer">
