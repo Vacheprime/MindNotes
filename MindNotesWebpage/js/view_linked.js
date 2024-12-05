@@ -5,6 +5,17 @@ if (notepages == null) {
 let startPageIndex = 0;
 let pageAmount = 8;
 
+function linkNotePages() {
+	// Create the list of referenced pages
+	
+	// Get all notepages
+	const allNotepages = JSON.parse(localStorage.getItem("NotePages"));
+
+	// filter by those who have links
+	const linkedPages = allNotepages.filter(p => p.links.length != 0);
+	console.log(linkedPages)
+	
+}
 
 function loadNotePagesForward() {
 	const viewContainer = document.getElementById("ViewNotepagesContainer");
@@ -13,16 +24,6 @@ function loadNotePagesForward() {
 	for (let i = startPageIndex; i < Math.min(notepages.length, startPageIndex + pageAmount); i++) {
 		const page = generateNotePageContainer(notepages[i]);
 		viewContainer.appendChild(page);
-	}
-}
-
-function loadCategories(categories) {
-	const select = document.getElementById("CategorySelect");
-	for (let i = 0; i < categories.length; i++) {
-		const option = document.createElement("option");
-		option.setAttribute("value", categories[i]);
-		option.innerText = categories[i];
-		select.appendChild(option);
 	}
 }
 
@@ -35,46 +36,13 @@ function load() {
 		getPreviousPages();
 	})
 
-	document.getElementById("CategorySelect").addEventListener("change", () => {
-		onCategoryChange();
-	})
-
-	document.getElementById("SearchButton").addEventListener("click", () => {
-		searchNotePages();
-	})
-
 	// Listen for screen resize
 	addEventListener("resize", reloadOnResize);
-	// Load the categories	
-	loadCategories(getAllCategories())
+
+	// link pages
+	linkNotePages();
+
 	// Load initial notepages
-	loadNotePagesForward();
-}
-
-function onCategoryChange() {
-	const allNotepages = JSON.parse(localStorage.getItem("NotePages"));
-	const selectedCategory = document.getElementById("CategorySelect").value;
-	if (selectedCategory == "ALL") {
-		notepages = allNotepages;
-	} else {
-		notepages = allNotepages.filter(p => p.category == selectedCategory);
-	}
-	startPageIndex = 0;
-	loadNotePagesForward();
-}
-
-function searchNotePages() {
-	const searchInput = document.getElementById("SearchInput");
-	const allNotepages = JSON.parse(localStorage.getItem("NotePages"));
-	if (searchInput.validity.valueMissing) {
-		notepages = allNotepages;
-		startPageIndex = 0;
-		loadNotePagesForward();
-		return;
-	}
-	const regex = new RegExp(".*" + searchInput.value + ".*", "gi");
-	notepages = allNotepages.filter(p => p.title.match(regex) !== null);
-	startPageIndex = 0;
 	loadNotePagesForward();
 }
 

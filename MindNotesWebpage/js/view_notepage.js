@@ -244,7 +244,7 @@ function getLinkablePages(notepage) {
 	for (let i = 0; i < notepages.length; i++) {
 		// Check if the notepage can be linked
 		const currentPage = notepages[i];
-		if (currentPage.id != notepage.id && !notepage.links.includes(currentPage.id)) {
+		if (currentPage.id != notepage.id && !notepage.links.includes(currentPage.id) && !currentPage.links.includes(notepage.id)) {
 			linkablePages.push(currentPage);
 		}
 	}

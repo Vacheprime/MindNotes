@@ -2,6 +2,7 @@ function loadStatistics() {
 	const notepages = JSON.parse(localStorage.getItem("NotePages"));
 	if (notepages == null) {
 		fillWithZero();
+		return;
 	}
 	
 	const totalNotepagesSpan = document.getElementById("TotalNotePagesSpan");
