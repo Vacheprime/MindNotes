@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="../js/statistics.js"></script>
     <link href="../styles/statistics_styles.css" rel="stylesheet">
     <title>Your Statistics</title>
 </head>
-<body>
+<body onload="loadStatistics()">
     <!-- Header section (top navigation bar) -->
     <header>
         <a href="homepage.html"><h1>MindNotes</h1></a>
@@ -21,23 +22,21 @@
                 <!-- The content here might be dynamically generated in the future -->
                 <div>
                     <h2>Total Note Pages</h2>
-                    <span id="TotalNotePagesSpan">XXXXXX</span>
+                    <span id="TotalNotePagesSpan"></span>
                 </div>
                 <div>
                     <h2>Total Links</h2>
-                    <span id="TotalLinksSpan">XXXXXX</span>
+                    <span id="TotalLinksSpan"></span>
                 </div>
                 <div>
                     <h2>Total Concepts</h2>
-                    <span id="TotalConceptsSpan">XXXXXX</span>
+                    <span id="TotalConceptsSpan"></span>
                 </div>
                 <div>
                     <h2>Total Words</h2>
-                    <span id="TotalWordsSpan">XXXXXX</span>
+                    <span id="TotalWordsSpan"></span>
                 </div>
             </div>
-            <!-- The canvas responsible for displaying a network graph of the linked notes -->
-            <canvas id="LinkedNotesCanvas"></canvas>
         </div>
     </main>
 </body>
