@@ -26,10 +26,10 @@ function createNewNotePage() {
 		const notepages = [
 			{
 				"id": 1,
-				"title": nameInput.Value,
-				"concept": conceptInput.Value,
-				"category": categoryInput.Value,
-				"content": "",
+				"title": nameInput.value,
+				"concept": conceptInput.value,
+				"category": categoryInput.value,
+				"content": null,
 				"links": [],
 				"bookmarked": false
 			}
@@ -48,10 +48,10 @@ function createNewNotePage() {
 		// Create a new notepage
 		const newNotepage = {
 			"id": notepages.length + 1,
-			"title": nameInput.Value,
-			"concept": conceptInput.Value,
-			"category": categoryInput.Value,
-			"content": "",
+			"title": nameInput.value,
+			"concept": conceptInput.value,
+			"category": categoryInput.value,
+			"content": null,
 			"links": [],
 			"bookmarked": false
 		};

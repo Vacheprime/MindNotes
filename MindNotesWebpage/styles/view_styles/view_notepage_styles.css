@@ -120,6 +120,16 @@ main {
     font-size: 2rem; /* Font sizes should be added via javascript and Quill.js */
 }
 
+.Visible-SidePanel {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 4fr;
+}
+
+.Invisible-SidePanel {
+	display: none;
+    grid-template-rows: 1fr 1fr 1fr 1fr 4fr;
+}
+
 /* For large screens, display the side panel along with the editor */
 @media (min-width: 1024px) {
     main {
@@ -133,6 +143,14 @@ main {
     #ShowControlsButton {
         display: none;
     }
+
+	#EditorContainer {
+		display: flex;
+	}
+
+	#SidePanel {
+		display: grid;
+	}
 }
 
 /* For small screens, remove side panel and display the show controls button */
@@ -143,6 +161,10 @@ main {
 
     header {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #ShowControlsButton {
+        display: inline-block;
     }
 
     #SidePanel {
