@@ -5,22 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../styles/homepage_styles.css" rel="stylesheet">
         <title>MindNotes</title>
+		<script src="../js/homepage.js"></script>
     </head>
-    <body>
+    <body onload="loadInspirationalQuote()">
         <!-- Header section (top navigation bar) -->
         <header>
-            <button id="AboutButton" onclick="window.location.href='about.html'">About</button>
+            <button id="AboutButton" onclick="goToAbout()">About</button>
             <h1>MindNotes</h1>
-            <button id="StatisticsButton" onclick="window.location.href='statistics.html'">Statistics</button>
+            <button id="StatisticsButton" onclick="goToStatistics()">Statistics</button>
         </header>
         <!-- Main section of the homepage -->
         <main>
-            <button id="CreateNewNotePage" onclick="window.location.href='create_notepage.html'">Create New Note Page</button>
-            <button id="ViewNotePages" onclick="window.location.href='view/view_notepages.html'">View Note Pages</button>
+            <button id="CreateNewNotePage" onclick="goToCreateNotePage()">Create New Note Page</button>
+            <button id="ViewNotePages" onclick="goToViewNotePages()">View Note Pages</button>
             
             <div id="QuoteContainer">
-                <p>Daily Inspirational Quote</p>
-                <p>Inspirational quotes provided by <a href="https://zenquotes.io/" target="_blank">ZenQuotes API</a></p>
+                <p id="QuoteLabel">Daily Inspirational Quote</p>
             </div>
         </main>
     </body>
